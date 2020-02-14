@@ -74,10 +74,24 @@ let displayAnimal = function (kind, type, breed) {
 }
 displayAnimal.call(animal, arr); */
 
-let animal = {kind: "mammal", type: "Dog", breed: "doberman"};
+/*let animal = {kind: "mammal", type: "Dog", breed: "doberman"};
 let func = function(){
     return `${this.kind}, ${this.type}, ${this.breed}`
 }
 
 let newfunc = func.bind(animal);
-document.write(newfunc());
+document.write(newfunc());*/
+
+class bird{
+    constructor(name, wingspan){
+        this.name = name;
+        this.wingspan = wingspan;
+    }
+   let fly = function(distance){
+        console.log(`${this.name} can fly ${distance} miles...`);
+    }
+}
+
+let bird1 = new bird("Eagle", 1.5);
+
+bird1.fly();
