@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <title>login</title>
+</head>
+<body>
+    <fieldset>
+        <legend>login</legend>
+        <form>
+            <p><label>email: <input type="email" required></label></p>
+            <p><label>credit card: <input type="text" pattern="[40-9]{13,16}"></label></p>
+            <p><label>age: <input type="range" min=1 max=10 step=2></label></p>
+            <p><label>password: <input type="text" id="pw1" required></label></p>
+            <p><label>retype password: <input type="text" id="pw2" required></label></p>
+            <input type="submit" value="submit to server" onclick="comparePw('pw1')">
+        </form>
+    </fieldset>
+</body>
+</html>

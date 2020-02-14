@@ -1,0 +1,1 @@
+const comparePw = (a) => alert(document.getElementById(a));
